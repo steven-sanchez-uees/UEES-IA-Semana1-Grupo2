@@ -49,7 +49,7 @@ En el análisis se identificaron diferencias claras entre tipos de flores al com
 ### Análisis de resultados
 
 1. **Resumen estadístico por especie**:
-   - La especie **virginica** tiene el mayor promedio de `petal_ratio`, seguido de **versicolor** y finalmente **setosa`.
+   - La especie **virginica** tiene el mayor promedio de ´petal_ratio´, seguido de **versicolor** y finalmente **setosa**.
    - Esto indica que el largo del pétalo de *virginica* es desproporcionadamente mayor respecto a su ancho en comparación con las otras especies.
    - Esta diferencia puede ser utilizada como **una variable discriminante para clasificación automática**.
 
