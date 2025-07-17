@@ -16,10 +16,21 @@
 │       └── 02_wine_plot_interactivo.html
 │
 ├── 03_Machine_Learning_Basico
-│   └── 03_Machine_Learning_Basico.ipynb
+│   ├── 03_Machine_Learning_Basico.ipynb
+│   └── images
+│       ├── accuracy_comparison.png
+│       ├── confusion_matrix_decision_tree.png
+│       ├── confusion_matrix_logistic_regression.png
+│       ├── confusion_matrix_random_forest.png
+│       ├── model_comparison.png
+│       └── proba_distribution.png
 │
 ├── 04_Deep_Learning_Intro
-│   └── 04_Deep_Learning_Intro.ipynb
+│   ├── 04_Deep_Learning_Intro.ipynb
+│       ├── accuracy_plot.png
+│       ├── confusion_matrix.png
+│       ├── loss_plot.png
+│       └── predicciones_random.png
 │
 └── README.md
 │
