@@ -29,15 +29,18 @@
 ## Menú
 
 - [Notebook 1 – Fundamentos NumPy y Pandas](./01_Fundamentos_NumPy_Pandas/01_Fundamentos_NumPy_Pandas.ipynb)
-  - <img src="./01_Fundamentos_NumPy_Pandas/images/01_iris_petal_ratio.png" alt="01_iris_petal_ratio" width="350"/>
+  - <img src="./01_Fundamentos_NumPy_Pandas/images/01_iris_petal_ratio.png" alt="01_iris_petal_ratio" width="300"/>
 - [Notebook 2 – Visualización de Datos](./02_Visualizacion_Datos/02_Visualizacion_Datos.ipynb)
-  - <img src="./02_Visualizacion_Datos/images/02_titanic_edad_clase.png" alt="02_titanic_edad_clase.png" width="350"/>
-  - <img src="./02_Visualizacion_Datos/images/02_titanic_genero.png" alt="02_titanic_genero.png" width="350"/>
+  - <img src="./02_Visualizacion_Datos/images/02_titanic_edad_clase.png" alt="02_titanic_edad_clase.png" width="300"/>
+  - <img src="./02_Visualizacion_Datos/images/02_titanic_genero.png" alt="02_titanic_genero.png" width="300"/>
   - [Ver gráfico interactivo Wine](https://steven-sanchez-uees.github.io/UEES-IA-Semana1-Grupo2/02_Visualizacion_Datos/images/02_wine_plot_interactivo.html)
 - [Notebook 3 – Machine Learning Básico](./03_Machine_Learning_Basico/03_Machine_Learning_Basico.ipynb)
+  - <img src="./03_Machine_Learning_Basico/images/confusion_matrix_decision_tree.png" alt="confusion_matrix_decision_tree.png" width="300"/>
+  - <img src="./03_Machine_Learning_Basico/images/proba_distribution.png" alt="proba_distribution.png" width="300"/>
+  - [Ver todas las imágenes](./03_Machine_Learning_Basico/images/)
 - [Notebook 4 – Introducción a Deep Learning](./04_Deep_Learning_Intro/04_Deep_Learning_Intro.ipynb)
 
-## Reporte
+## Reporte Ejecutivo
 
 ### 1. Fundamentos NumPy y Pandas
 En el análisis se identificaron diferencias claras entre tipos de flores al comparar la proporción entre el largo y ancho de sus pétalos; Esta métrica permitió visualizar patrones que podrían ser útiles para clasificarlas automáticamente.
@@ -71,12 +74,17 @@ La métrica petal_ratio resulta ser un indicador relevante para distinguir entre
 
 
 ### 2. Visualización de Datos
-El análisis del Titanic evidenció que la edad y el género estuvieron relacionados con la clase del pasajero, lo que sugiere desigualdad en la distribución de grupos a bordo.
-Además, se detectaron agrupaciones entre tipos de vino según su nivel de alcohol y acidez. Esto confirma que ciertas características químicas permiten distinguir vinos de forma visual, útil para clasificación o recomendaciones.
+Se identificaron patrones clave que ayudan a comprender mejor los datos:
 
-- Se realizaron gráficos estadísticos con **Seaborn** y visualizaciones interactivas con **Plotly**.
-- Se analizó la relación entre variables del dataset **Titanic** como clase, edad y sexo.
-- Se generó un gráfico interactivo que muestra la distribución química del vino por tipo.
+- En el caso del Titanic, los gráficos revelaron que la edad y el género influyeron significativamente en la distribución de los pasajeros por clase. Los adultos predominaban en primera clase, mientras que en tercera clase había mayor presencia de hombres y jóvenes. Esto sugiere desigualdad en el acceso a recursos dentro del barco.
+
+- Para los vinos, el análisis visual mostró que, al comparar niveles de alcohol y acidez, se formaban agrupaciones por tipo de vino. Estas diferencias químicas se pueden aprovechar para clasificarlos automáticamente.
+
+Se utilizaron herramientas gráficas estáticas y dinámicas para facilitar el análisis, permitiendo identificar patrones que no serían visibles solo con tablas numéricas.
+
+### Conclusión
+
+La visualización no solo hizo más comprensible la información, sino que expuso relaciones ocultas entre variables que pueden apoyar decisiones y automatizar procesos como segmentación o clasificación.
 
 ---
 
@@ -84,46 +92,42 @@ Además, se detectaron agrupaciones entre tipos de vino según su nivel de alcoh
 En esta actividad aplicamos técnicas de Machine Learning supervisado para resolver un problema clásico: predecir si una persona sobrevivió o no al hundimiento del Titanic, basándonos en sus características personales como clase, sexo, edad, número de familiares, tarifa pagada, entre otros.
 
 Para esto, utilizamos tres modelos de clasificación muy populares:
-    Regresión Logística
-    Árbol de Decisión
-    Random Forest
+- Regresión Logística
+- Árbol de Decisión
+- Random Forest
 
 Luego de entrenarlos, comparamos su desempeño mediante métricas como accuracy, precision, recall y F1-score, y visualizamos sus resultados a través de gráficos y matrices de confusión.
 
-#### Resultados Generales de Precisión
-Al evaluar la precisión general de cada modelo, encontramos lo siguiente:
+i. **Resultados Generales de Precisión**
+<br>Al evaluar la precisión general de cada modelo, encontramos lo siguiente:
+````
     Regresión Logística: 81.01%
     Random Forest: 79.89%
     Árbol de Decisión: 78.77%
+````
 
-#### Distribución de Probabilidades – Regresión Logística
-Este gráfico nos ayuda a entender cómo el modelo de regresión logística calcula la probabilidad de supervivencia para cada pasajero. Como se observa, hay una clara separación en las predicciones: muchas personas tienen probabilidades muy bajas o muy altas, lo cual indica que el modelo está bastante seguro en la mayoría de sus decisiones.
+ii. **Distribución de Probabilidades – Regresión Logística**
+<br>Este gráfico nos ayuda a entender cómo el modelo de regresión logística calcula la probabilidad de supervivencia para cada pasajero. Como se observa, hay una clara separación en las predicciones: muchas personas tienen probabilidades muy bajas o muy altas, lo cual indica que el modelo está bastante seguro en la mayoría de sus decisiones.
 
 La línea roja marca el umbral de decisión del modelo (0.5), que separa a los que fueron clasificados como sobrevivientes y no sobrevivientes.
 
-#### Matrices de Confusión
-Las siguientes gráficas muestran cuántas predicciones fueron correctas o incorrectas para cada modelo. Esto permite identificar qué tan bien aciertan en ambas clases (sobrevivientes y no sobrevivientes):
-
-Regresión Logística
-    Predijo correctamente a 90 personas que no sobrevivieron.
-    Predijo correctamente a 55 personas que sí sobrevivieron.
-    Se equivocó con 15 personas (falsos positivos) y con 19 (falsos negativos).
-
-Árbol de Decisión
-    Tuvo más errores que la regresión logística, especialmente clasificando a personas que no sobrevivieron.
-
-Random Forest
-    Su rendimiento fue intermedio entre los dos modelos anteriores, con un número de aciertos y errores muy balanceado.
+iii. **Matrices de Confusión**
+<br>Las siguientes gráficas muestran cuántas predicciones fueron correctas o incorrectas para cada modelo. Esto permite identificar qué tan bien aciertan en ambas clases (sobrevivientes y no sobrevivientes):
+- **Regresión Logística**
+  - Predijo correctamente a 90 personas que no sobrevivieron.
+  - Predijo correctamente a 55 personas que sí sobrevivieron.
+  - Se equivocó con 15 personas (falsos positivos) y con 19 (falsos negativos).
+- **Árbol de Decisión**
+    <br>Tuvo más errores que la regresión logística, especialmente clasificando a personas que no sobrevivieron.
+- **Random Forest**
+    <br>Su rendimiento fue intermedio entre los dos modelos anteriores, con un número de aciertos y errores muy balanceado.
 
 En general, la regresión logística mostró el mejor equilibrio entre precisión y sensibilidad (F1-score), lo cual la convierte en una buena opción cuando se busca un balance entre ambos aspectos.
 
-#### Conclusiones
-La Regresión Logística se posicionó como el mejor modelo en este caso, con el mayor puntaje de precisión y un buen balance general.
-
-Random Forest también mostró resultados sólidos, especialmente en términos de precisión.
-
-Aunque el Árbol de Decisión fue el más simple, tuvo una leve desventaja frente a los otros modelos.
-
+### Conclusiones
+- La Regresión Logística se posicionó como el mejor modelo en este caso, con el mayor puntaje de precisión y un buen balance general.
+- Random Forest también mostró resultados sólidos, especialmente en términos de precisión.
+- Aunque el Árbol de Decisión fue el más simple, tuvo una leve desventaja frente a los otros modelos.
 
 -------
 
