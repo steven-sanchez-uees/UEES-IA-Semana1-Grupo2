@@ -118,9 +118,15 @@ Random Forest
 En general, la regresión logística mostró el mejor equilibrio entre precisión y sensibilidad (F1-score), lo cual la convierte en una buena opción cuando se busca un balance entre ambos aspectos.
 
 ## Conclusiones
-    La Regresión Logística se posicionó como el mejor modelo en este caso, con el mayor puntaje de precisión y un buen balance general.
-    Random Forest también mostró resultados sólidos, especialmente en términos de precisión.
-    Aunque el Árbol de Decisión fue el más simple, tuvo una leve desventaja frente a los otros modelos.
+La Regresión Logística se posicionó como el mejor modelo en este caso, con el mayor puntaje de precisión y un buen balance general.
+
+Random Forest también mostró resultados sólidos, especialmente en términos de precisión.
+
+Aunque el Árbol de Decisión fue el más simple, tuvo una leve desventaja frente a los otros modelos.
+
+
+-------
+
 
 -------
 > *Desarrollado por el Grupo 2 – Universidad Espíritu Santo (UEES)*
