@@ -46,7 +46,7 @@ En el análisis se identificaron diferencias claras entre tipos de flores al com
 - Se analizaron y manipularon datos utilizando arrays y DataFrames.
 - Se creó una nueva métrica "petal_ratio" que permitió observar diferencias entre especies de flores.
 
-###Análisis de resultados
+### Análisis de resultados
 
 1. **Resumen estadístico por especie**:
    - La especie **virginica** tiene el mayor promedio de `petal_ratio`, seguido de **versicolor** y finalmente **setosa`.
