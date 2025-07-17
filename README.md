@@ -26,21 +26,7 @@
 └── requirements.txt
 ```
 
-## Menú
-
-- [Notebook 1 – Fundamentos NumPy y Pandas](./01_Fundamentos_NumPy_Pandas/01_Fundamentos_NumPy_Pandas.ipynb)
-  - <img src="./01_Fundamentos_NumPy_Pandas/images/01_iris_petal_ratio.png" alt="01_iris_petal_ratio" width="300"/>
-- [Notebook 2 – Visualización de Datos](./02_Visualizacion_Datos/02_Visualizacion_Datos.ipynb)
-  - <img src="./02_Visualizacion_Datos/images/02_titanic_edad_clase.png" alt="02_titanic_edad_clase.png" width="300"/>
-  - <img src="./02_Visualizacion_Datos/images/02_titanic_genero.png" alt="02_titanic_genero.png" width="300"/>
-  - [Ver gráfico interactivo Wine](https://steven-sanchez-uees.github.io/UEES-IA-Semana1-Grupo2/02_Visualizacion_Datos/images/02_wine_plot_interactivo.html)
-- [Notebook 3 – Machine Learning Básico](./03_Machine_Learning_Basico/03_Machine_Learning_Basico.ipynb)
-  - <img src="./03_Machine_Learning_Basico/images/confusion_matrix_decision_tree.png" alt="confusion_matrix_decision_tree.png" width="300"/>
-  - <img src="./03_Machine_Learning_Basico/images/proba_distribution.png" alt="proba_distribution.png" width="300"/>
-  - [Ver todas las imágenes](./03_Machine_Learning_Basico/images/)
-- [Notebook 4 – Introducción a Deep Learning](./04_Deep_Learning_Intro/04_Deep_Learning_Intro.ipynb)
-
-## Reporte Ejecutivo
+## Informe Ejecutivo
 
 ### 1. Fundamentos NumPy y Pandas
 En el análisis se identificaron diferencias claras entre tipos de flores al comparar la proporción entre el largo y ancho de sus pétalos; Esta métrica permitió visualizar patrones que podrían ser útiles para clasificarlas automáticamente.
@@ -65,6 +51,10 @@ iii. **Distribución visual**:
    - Hay picos notables alrededor de los valores 2.5 y 4, lo que probablemente corresponde a la especie *setosa*.
    - Las colas hacia la derecha muestran la presencia de valores altos asociados a *virginica*, confirmando su mayor razón pétalo.
 
+### Evidencias
+
+- [Notebook 1](./01_Fundamentos_NumPy_Pandas/01_Fundamentos_NumPy_Pandas.ipynb)
+- <img src="./01_Fundamentos_NumPy_Pandas/images/01_iris_petal_ratio.png" alt="01_iris_petal_ratio" width="300"/>
 
 ### Conclusión
 
@@ -81,6 +71,13 @@ Se identificaron patrones clave que ayudan a comprender mejor los datos:
 - Para los vinos, el análisis visual mostró que, al comparar niveles de alcohol y acidez, se formaban agrupaciones por tipo de vino. Estas diferencias químicas se pueden aprovechar para clasificarlos automáticamente.
 
 Se utilizaron herramientas gráficas estáticas y dinámicas para facilitar el análisis, permitiendo identificar patrones que no serían visibles solo con tablas numéricas.
+
+### Evidencias
+
+- [Notebook 2](./02_Visualizacion_Datos/02_Visualizacion_Datos.ipynb)
+- <img src="./02_Visualizacion_Datos/images/02_titanic_edad_clase.png" alt="02_titanic_edad_clase.png" width="300"/>
+- <img src="./02_Visualizacion_Datos/images/02_titanic_genero.png" alt="02_titanic_genero.png" width="300"/>
+- [Ver gráfico interactivo Wine](https://steven-sanchez-uees.github.io/UEES-IA-Semana1-Grupo2/02_Visualizacion_Datos/images/02_wine_plot_interactivo.html)
 
 ### Conclusión
 
@@ -123,6 +120,12 @@ iii. **Matrices de Confusión**
     <br>Su rendimiento fue intermedio entre los dos modelos anteriores, con un número de aciertos y errores muy balanceado.
 
 En general, la regresión logística mostró el mejor equilibrio entre precisión y sensibilidad (F1-score), lo cual la convierte en una buena opción cuando se busca un balance entre ambos aspectos.
+
+### Evidencias
+- [Notebook 3](./03_Machine_Learning_Basico/03_Machine_Learning_Basico.ipynb)
+- <img src="./03_Machine_Learning_Basico/images/confusion_matrix_decision_tree.png" alt="confusion_matrix_decision_tree.png" width="300"/>
+- <img src="./03_Machine_Learning_Basico/images/proba_distribution.png" alt="proba_distribution.png" width="300"/>
+- [Ver todas las imágenes](./03_Machine_Learning_Basico/images/)
 
 ### Conclusiones
 - La Regresión Logística se posicionó como el mejor modelo en este caso, con el mayor puntaje de precisión y un buen balance general.
