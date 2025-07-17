@@ -51,14 +51,14 @@ En el análisis se identificaron diferencias claras entre tipos de flores al com
 1. **Resumen estadístico por especie**:
    - La especie **virginica** tiene el mayor promedio de ´petal_ratio´, seguido de **versicolor** y finalmente **setosa**.
    - Esto indica que el largo del pétalo de *virginica* es desproporcionadamente mayor respecto a su ancho en comparación con las otras especies.
-   - Esta diferencia puede ser utilizada como **una variable discriminante para clasificación automática**.
+   - Esta diferencia puede ser utilizada como una variable discriminante para clasificación automática.
 
 2. **Nueva columna `petal_ratio`**:
    - Se incorporó exitosamente como una nueva variable en el DataFrame.
    - La inspección inicial (`.head()`) muestra variabilidad en los valores, que será útil para análisis posterior.
 
 3. **Distribución visual**:
-   - El histograma muestra que la mayoría de los valores de `petal_ratio` se concentran entre 2 y 6.
+   - El histograma muestra que la mayoría de los valores de **petal_ratio** se concentran entre 2 y 6.
    - Hay picos notables alrededor de los valores 2.5 y 4, lo que probablemente corresponde a la especie *setosa*.
    - Las colas hacia la derecha muestran la presencia de valores altos asociados a *virginica*, confirmando su mayor razón pétalo.
 
