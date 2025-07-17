@@ -79,6 +79,50 @@ Además, se detectaron agrupaciones entre tipos de vino según su nivel de alcoh
 - Se generó un gráfico interactivo que muestra la distribución química del vino por tipo.
 
 ---
+
+## 3. Machine Learning Basico
+En esta actividad aplicamos técnicas de Machine Learning supervisado para resolver un problema clásico: predecir si una persona sobrevivió o no al hundimiento del Titanic, basándonos en sus características personales como clase, sexo, edad, número de familiares, tarifa pagada, entre otros.
+
+Para esto, utilizamos tres modelos de clasificación muy populares:
+    Regresión Logística
+    Árbol de Decisión
+    Random Forest
+
+Luego de entrenarlos, comparamos su desempeño mediante métricas como accuracy, precision, recall y F1-score, y visualizamos sus resultados a través de gráficos y matrices de confusión.
+
+## Resultados Generales de Precisión
+Al evaluar la precisión general de cada modelo, encontramos lo siguiente:
+    Regresión Logística: 81.01%
+    Random Forest: 79.89%
+    Árbol de Decisión: 78.77%
+
+## Distribución de Probabilidades – Regresión Logística
+Este gráfico nos ayuda a entender cómo el modelo de regresión logística calcula la probabilidad de supervivencia para cada pasajero. Como se observa, hay una clara separación en las predicciones: muchas personas tienen probabilidades muy bajas o muy altas, lo cual indica que el modelo está bastante seguro en la mayoría de sus decisiones.
+
+La línea roja marca el umbral de decisión del modelo (0.5), que separa a los que fueron clasificados como sobrevivientes y no sobrevivientes.
+
+## Matrices de Confusión
+Las siguientes gráficas muestran cuántas predicciones fueron correctas o incorrectas para cada modelo. Esto permite identificar qué tan bien aciertan en ambas clases (sobrevivientes y no sobrevivientes):
+
+Regresión Logística
+    Predijo correctamente a 90 personas que no sobrevivieron.
+    Predijo correctamente a 55 personas que sí sobrevivieron.
+    Se equivocó con 15 personas (falsos positivos) y con 19 (falsos negativos).
+
+Árbol de Decisión
+    Tuvo más errores que la regresión logística, especialmente clasificando a personas que no sobrevivieron.
+
+Random Forest
+    Su rendimiento fue intermedio entre los dos modelos anteriores, con un número de aciertos y errores muy balanceado.
+
+En general, la regresión logística mostró el mejor equilibrio entre precisión y sensibilidad (F1-score), lo cual la convierte en una buena opción cuando se busca un balance entre ambos aspectos.
+
+## Conclusiones
+    La Regresión Logística se posicionó como el mejor modelo en este caso, con el mayor puntaje de precisión y un buen balance general.
+    Random Forest también mostró resultados sólidos, especialmente en términos de precisión.
+    Aunque el Árbol de Decisión fue el más simple, tuvo una leve desventaja frente a los otros modelos.
+
+-------
 > *Desarrollado por el Grupo 2 – Universidad Espíritu Santo (UEES)*
 > 
 > • Steven Sánchez [@steven-sanchez-uees](https://github.com/steven-sanchez-uees)<br>
