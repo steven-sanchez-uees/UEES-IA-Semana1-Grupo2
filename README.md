@@ -62,3 +62,5 @@ Además, se detectaron agrupaciones entre tipos de vino según su nivel de alcoh
 > • Cristina Gramal [@cristina-gramal](https://github.com/cristina-gramal)<br>
 > • Veronica Ochoa [@veritochoah](https://github.com/veritochoah)<br>
 > • Darío Pérez [@dario-perez-v](https://github.com/dario-perez-v)<br>
+> • Tomas Guijo [@tguijo](https://github.com/tguijo)<br>
+
