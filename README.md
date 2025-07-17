@@ -80,7 +80,7 @@ Además, se detectaron agrupaciones entre tipos de vino según su nivel de alcoh
 
 ---
 
-## 3. Machine Learning Basico
+### 3. Machine Learning Basico
 En esta actividad aplicamos técnicas de Machine Learning supervisado para resolver un problema clásico: predecir si una persona sobrevivió o no al hundimiento del Titanic, basándonos en sus características personales como clase, sexo, edad, número de familiares, tarifa pagada, entre otros.
 
 Para esto, utilizamos tres modelos de clasificación muy populares:
@@ -90,18 +90,18 @@ Para esto, utilizamos tres modelos de clasificación muy populares:
 
 Luego de entrenarlos, comparamos su desempeño mediante métricas como accuracy, precision, recall y F1-score, y visualizamos sus resultados a través de gráficos y matrices de confusión.
 
-## Resultados Generales de Precisión
+#### Resultados Generales de Precisión
 Al evaluar la precisión general de cada modelo, encontramos lo siguiente:
     Regresión Logística: 81.01%
     Random Forest: 79.89%
     Árbol de Decisión: 78.77%
 
-## Distribución de Probabilidades – Regresión Logística
+#### Distribución de Probabilidades – Regresión Logística
 Este gráfico nos ayuda a entender cómo el modelo de regresión logística calcula la probabilidad de supervivencia para cada pasajero. Como se observa, hay una clara separación en las predicciones: muchas personas tienen probabilidades muy bajas o muy altas, lo cual indica que el modelo está bastante seguro en la mayoría de sus decisiones.
 
 La línea roja marca el umbral de decisión del modelo (0.5), que separa a los que fueron clasificados como sobrevivientes y no sobrevivientes.
 
-## Matrices de Confusión
+#### Matrices de Confusión
 Las siguientes gráficas muestran cuántas predicciones fueron correctas o incorrectas para cada modelo. Esto permite identificar qué tan bien aciertan en ambas clases (sobrevivientes y no sobrevivientes):
 
 Regresión Logística
@@ -117,7 +117,7 @@ Random Forest
 
 En general, la regresión logística mostró el mejor equilibrio entre precisión y sensibilidad (F1-score), lo cual la convierte en una buena opción cuando se busca un balance entre ambos aspectos.
 
-## Conclusiones
+#### Conclusiones
 La Regresión Logística se posicionó como el mejor modelo en este caso, con el mayor puntaje de precisión y un buen balance general.
 
 Random Forest también mostró resultados sólidos, especialmente en términos de precisión.
