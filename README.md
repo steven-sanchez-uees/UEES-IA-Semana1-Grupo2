@@ -54,10 +54,6 @@ Además, se detectaron agrupaciones entre tipos de vino según su nivel de alcoh
 - Se analizó la relación entre variables del dataset **Titanic** como clase, edad y sexo.
 - Se generó un gráfico interactivo que muestra la distribución química del vino por tipo.
 
-
-###Hola VO
-
-###HolaTG
 ---
 > *Desarrollado por el Grupo 2 – Universidad Espíritu Santo (UEES)*
 > 
@@ -65,3 +61,4 @@ Además, se detectaron agrupaciones entre tipos de vino según su nivel de alcoh
 > • Joel Espín [@joel-espin-uees](https://github.com/joel-espin-uees)<br>
 > • Cristina Gramal [@cristina-gramal](https://github.com/cristina-gramal)<br>
 > • Veronica Ochoa [@veritochoah](https://github.com/veritochoah)<br>
+> • Darío Pérez [@dario-perez-v](https://github.com/dario-perez-v)<br>
