@@ -48,16 +48,16 @@ En el análisis se identificaron diferencias claras entre tipos de flores al com
 
 ### Análisis de resultados
 
-1. **Resumen estadístico por especie**:
+i. **Resumen estadístico por especie**:
    - La especie **virginica** tiene el mayor promedio de ´petal_ratio´, seguido de **versicolor** y finalmente **setosa**.
    - Esto indica que el largo del pétalo de *virginica* es desproporcionadamente mayor respecto a su ancho en comparación con las otras especies.
    - Esta diferencia puede ser utilizada como una variable discriminante para clasificación automática.
 
-2. **Nueva columna petal_ratio**:
+ii. **Nueva columna petal_ratio**:
    - Se incorporó exitosamente como una nueva variable en el DataFrame.
    - La inspección inicial (.head()) muestra variabilidad en los valores, que será útil para análisis posterior.
 
-3. **Distribución visual**:
+iii. **Distribución visual**:
    - El histograma muestra que la mayoría de los valores de **petal_ratio** se concentran entre 2 y 6.
    - Hay picos notables alrededor de los valores 2.5 y 4, lo que probablemente corresponde a la especie *setosa*.
    - Las colas hacia la derecha muestran la presencia de valores altos asociados a *virginica*, confirmando su mayor razón pétalo.
@@ -70,7 +70,7 @@ La métrica petal_ratio resulta ser un indicador relevante para distinguir entre
 ---
 
 
-### Visualización de Datos
+### 2. Visualización de Datos
 El análisis del Titanic evidenció que la edad y el género estuvieron relacionados con la clase del pasajero, lo que sugiere desigualdad en la distribución de grupos a bordo.
 Además, se detectaron agrupaciones entre tipos de vino según su nivel de alcohol y acidez. Esto confirma que ciertas características químicas permiten distinguir vinos de forma visual, útil para clasificación o recomendaciones.
 
