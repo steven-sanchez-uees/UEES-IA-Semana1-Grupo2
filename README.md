@@ -39,12 +39,31 @@
 
 ## Reporte
 
-### Fundamentos NumPy y Pandas
+### 1. Fundamentos NumPy y Pandas
 En el análisis se identificaron diferencias claras entre tipos de flores al comparar la proporción entre el largo y ancho de sus pétalos; Esta métrica permitió visualizar patrones que podrían ser útiles para clasificarlas automáticamente.
 
 - Se trabajó con el dataset **Iris**.
 - Se analizaron y manipularon datos utilizando arrays y DataFrames.
 - Se creó una nueva métrica "petal_ratio" que permitió observar diferencias entre especies de flores.
+
+###Análisis de resultados
+
+1. **Resumen estadístico por especie**:
+   - La especie **virginica** tiene el mayor promedio de `petal_ratio`, seguido de **versicolor** y finalmente **setosa`.
+   - Esto indica que el largo del pétalo de *virginica* es desproporcionadamente mayor respecto a su ancho en comparación con las otras especies.
+   - Esta diferencia puede ser utilizada como **una variable discriminante para clasificación automática**.
+
+2. **Nueva columna `petal_ratio`**:
+   - Se incorporó exitosamente como una nueva variable en el DataFrame.
+   - La inspección inicial (`.head()`) muestra variabilidad en los valores, que será útil para análisis posterior.
+
+3. **Distribución visual**:
+   - El histograma muestra que la mayoría de los valores de `petal_ratio` se concentran entre 2 y 6.
+   - Hay picos notables alrededor de los valores 2.5 y 4, lo que probablemente corresponde a la especie *setosa*.
+   - Las colas hacia la derecha muestran la presencia de valores altos asociados a *virginica*, confirmando su mayor razón pétalo.
+
+---
+
 
 ### Visualización de Datos
 El análisis del Titanic evidenció que la edad y el género estuvieron relacionados con la clase del pasajero, lo que sugiere desigualdad en la distribución de grupos a bordo.
