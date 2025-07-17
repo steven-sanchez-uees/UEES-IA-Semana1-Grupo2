@@ -62,6 +62,11 @@ En el análisis se identificaron diferencias claras entre tipos de flores al com
    - Hay picos notables alrededor de los valores 2.5 y 4, lo que probablemente corresponde a la especie *setosa*.
    - Las colas hacia la derecha muestran la presencia de valores altos asociados a *virginica*, confirmando su mayor razón pétalo.
 
+
+### Conclusión
+
+La métrica petal_ratio resulta ser un indicador relevante para distinguir entre especies de Iris. Su distribución evidencia diferencias significativas en la morfología floral, siendo útil como variable de entrada para modelos de clasificación. La visualización complementa este hallazgo, mostrando patrones claros entre grupos.
+
 ---
 
 
