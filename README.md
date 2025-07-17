@@ -53,9 +53,9 @@ En el análisis se identificaron diferencias claras entre tipos de flores al com
    - Esto indica que el largo del pétalo de *virginica* es desproporcionadamente mayor respecto a su ancho en comparación con las otras especies.
    - Esta diferencia puede ser utilizada como una variable discriminante para clasificación automática.
 
-2. **Nueva columna `petal_ratio`**:
+2. **Nueva columna petal_ratio**:
    - Se incorporó exitosamente como una nueva variable en el DataFrame.
-   - La inspección inicial (`.head()`) muestra variabilidad en los valores, que será útil para análisis posterior.
+   - La inspección inicial (.head()) muestra variabilidad en los valores, que será útil para análisis posterior.
 
 3. **Distribución visual**:
    - El histograma muestra que la mayoría de los valores de **petal_ratio** se concentran entre 2 y 6.
