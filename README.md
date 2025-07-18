@@ -145,27 +145,11 @@ En general, la regresión logística mostró el mejor equilibrio entre precisió
 
 -------
 
-###  04_Deep_Learning_Intro
-
-##  Acceso directo al notebook
-- [Notebook 4 - Deep Learning](./04_Deep_Learning_Intro/04_Deep_Learning_Intro.ipynb)
-
-##  Descripción general
+###  04. Deep Learning
 
 Este notebook implementa una red neuronal multicapa utilizando TensorFlow y Keras para resolver un problema de clasificación multiclase basado en el dataset Iris. A través de este laboratorio se aborda el flujo completo de un modelo de Deep Learning desde el preprocesamiento hasta la evaluación con gráficas y métricas.
 
----
-
-##  Componentes clave del notebook
-
-- 🔹 Carga del dataset Iris y normalización con `StandardScaler`
-- 🔹 Codificación `one-hot` para etiquetas multiclase
-- 🔹 Arquitectura de red neuronal secuencial con dos capas ocultas
-- 🔹 Compilación y entrenamiento del modelo
-- 🔹 Visualización de métricas con Matplotlib
-- 🔹 Evaluación con accuracy, loss, matriz de confusión y ejemplos visuales
-
----
+El modelo fue entrenado durante 30 epochs, que contiene imágenes de dígitos manuscritos de 8x8 píxeles. Los datos se normalizaron y codificaron en formato one-hot, dividiéndose en un 80% para entrenamiento y 20% para prueba. Además, del conjunto de entrenamiento se reservó un 20% para validación durante el entrenamiento, lo que permitió monitorear el rendimiento del modelo en cada época.
 
 ###  Resultados del entrenamiento
 
@@ -176,8 +160,8 @@ El siguiente gráfico muestra la evolución de la precisión durante las 30 épo
 ![Precisión del modelo](https://github.com/steven-sanchez-uees/UEES-IA-Semana1-Grupo2/blob/main/04_Deep_Learning_Intro/images/accuracy_plot.png?raw=true)
 
 **Interpretación**:
-- Se observa un crecimiento constante de la precisión en entrenamiento.
-- La validación alcanza aproximadamente un **95%**, lo cual indica buena generalización sin sobreajuste.
+
+El modelo muestra una mejora rápida de la precisión en las primeras 5 épocas, superando el 90% tanto en entrenamiento como en validación. A partir de ese punto, las curvas se estabilizan con una ligera ventaja del conjunto de entrenamiento, alcanzando casi el 100%. La precisión de validación se mantiene constante cerca del 95%, lo que indica un buen ajuste del modelo sin sobreentrenamiento.
 
 ---
 
@@ -187,57 +171,57 @@ Este gráfico representa la pérdida del modelo durante el entrenamiento:
 
 ![Pérdida del modelo](https://github.com/steven-sanchez-uees/UEES-IA-Semana1-Grupo2/blob/main/04_Deep_Learning_Intro/images/loss_plot.png?raw=true)
 
-📉 **Interpretación**:
-- La pérdida en validación disminuye progresivamente hasta estabilizarse.
-- El modelo logra minimizar el error de forma eficiente, convergiendo correctamente.
+ **Interpretación**:
+ 
+La pérdida del modelo disminuye rápidamente durante las primeras épocas, lo que indica un aprendizaje eficiente en las etapas iniciales. A partir de la época 10, ambas curvas (entrenamiento y validación) se estabilizan con valores cercanos a cero. La ligera separación entre ambas curvas es normal y sugiere que el modelo generaliza bien sin señales evidentes de sobreajuste.
 
 ---
 
-## 📊 Evaluación del modelo
+### Evaluación del modelo
 
-### 🔹 Matriz de Confusión
+###  Matriz de Confusión
 
 Representa la relación entre clases verdaderas y predichas:
 
 ![Matriz de Confusión](https://github.com/steven-sanchez-uees/UEES-IA-Semana1-Grupo2/blob/main/04_Deep_Learning_Intro/images/confusion_matrix.png?raw=true)
 
-📌 **Interpretación**:
-- La diagonal indica predicciones correctas.
-- Una alta concentración en la diagonal muestra un modelo eficaz.
+ **Interpretación**:
+ 
+La matriz de confusión muestra que la mayoría de las predicciones del modelo son correctas, con valores altos en la diagonal principal. Las clases más representadas (como los dígitos 4, 5 y 6) fueron clasificadas con alta precisión. Las pocas confusiones observadas se presentan principalmente entre dígitos visualmente similares, como el 8 y el 9. Esto indica que el modelo tiene un desempeño sólido y generaliza bien en la clasificación de todos los dígitos.
 
 ---
 
-### 🔹 Predicciones aleatorias
+###  Predicciones aleatorias
 
 Ejemplos visuales de predicciones en imágenes de prueba:
 
 ![Predicciones aleatorias](https://github.com/steven-sanchez-uees/UEES-IA-Semana1-Grupo2/blob/main/04_Deep_Learning_Intro/images/predicciones_random.png?raw=true)
 
-📌 **Interpretación**:
-- Muestra imágenes clasificadas correctamente por el modelo.
-- Se comparan etiquetas verdaderas (`V`) con predicciones (`P`).
+ **Interpretación**:
 
----
-
-### 📐 Métricas finales del modelo
+La visualización muestra ejemplos aleatorios de imágenes de prueba con sus respectivos valores verdaderos (V) y predichos (P). La mayoría de los dígitos fueron clasificados correctamente, lo que valida visualmente el rendimiento del modelo. Las métricas reportadas refuerzan esta observación:
 
 | Métrica     | Valor aproximado |
 |-------------|------------------|
-| Accuracy    | ~0.99            |
-| MSE         | *0.03 (ejemplo)* |
-| MAE         | *0.02 (ejemplo)* |
-| R² Score    | *0.95 (ejemplo)* |
+| Accuracy    | 0.9583           |
+| MSE         | 1.0167           |
+| MAE         | 0.1778           |
+| R2          | 0.8684           |
 
-📌 **Notas**:
-- **Accuracy** indica precisión general del modelo.
-- **MSE / MAE** miden el error cuadrático y absoluto.
-- **R²** evalúa qué tan bien se ajustan las predicciones a los valores reales.
+El modelo alcanza un 95.8% de precisión y presenta errores bajos, lo que indica un aprendizaje efectivo y una capacidad alta de generalización al clasificar dígitos escritos a mano.
+
 
 ---
 
-## 🧠 Conclusión general
+##  Conclusión
 
-El modelo desarrollado demostró un desempeño sobresaliente en la clasificación del dataset Iris. Tanto las métricas como las gráficas evidencian un entrenamiento exitoso, con buena capacidad de generalización, sin indicios significativos de sobreajuste. Las visualizaciones refuerzan la confianza en las predicciones del modelo.
+El modelo de red neuronal profunda entrenado para la clasificación de dígitos manuscritos demostró un excelente rendimiento tanto en términos cuantitativos como visuales. Alcanzó una precisión del 95.8% con un bajo error MSE: 1.01, MAE: 0.17 y un coeficiente de determinación R2 de 0.86, lo que evidencia un ajuste sólido a los datos. Las curvas de entrenamiento muestran una rápida convergencia sin signos de sobreajuste, y la matriz de confusión confirma una alta tasa de aciertos en todas las clases. Además, las predicciones visuales reflejan una correcta interpretación de patrones por parte del modelo. 
+
+
+### Evidencias
+
+
+- [Notebook 4 - Deep Learning](./04_Deep_Learning_Intro/04_Deep_Learning_Intro.ipynb)
 
 ---
 
