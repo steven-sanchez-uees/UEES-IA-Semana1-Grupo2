@@ -110,7 +110,7 @@ La variable petal_ratio permite observar de forma clara las diferencias entre es
 
 ### Conclusión
 
-La métrica petal_ratio resulta ser un indicador relevante para distinguir entre especies de Iris. Su distribución evidencia diferencias significativas en la morfología floral, siendo útil como variable de entrada para modelos de clasificación. La visualización complementa este hallazgo, mostrando patrones claros entre grupos.
+El análisis demostró que petal_ratio es una métrica efectiva para diferenciar especies de Iris. Gracias al uso combinado de NumPy y Pandas, fue posible crear, procesar y visualizar esta variable de manera eficiente. La distribución observada sugiere que esta métrica puede ser altamente útil como atributo en algoritmos de clasificación supervisada, tanto por su capacidad de segmentación como por su simplicidad de cálculo..
 
 ---
 
