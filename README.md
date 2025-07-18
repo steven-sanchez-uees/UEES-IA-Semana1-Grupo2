@@ -127,8 +127,8 @@ Se utilizaron herramientas gráficas estáticas y dinámicas para facilitar el a
 ### Evidencias
 
 - [Notebook 2](./02_Visualizacion_Datos/02_Visualizacion_Datos.ipynb)
-- <img src="./02_Visualizacion_Datos/images/02_titanic_edad_clase.png" alt="02_titanic_edad_clase.png" width="300"/>
-- <img src="./02_Visualizacion_Datos/images/02_titanic_genero.png" alt="02_titanic_genero.png" width="300"/>
+- <img src="./02_Visualizacion_Datos/images/02_titanic_edad_clase.png" alt="02_titanic_edad_clase.png" width="800"/>
+- <img src="./02_Visualizacion_Datos/images/02_titanic_genero.png" alt="02_titanic_genero.png" width="800"/>
 - [Ver gráfico interactivo Wine](https://steven-sanchez-uees.github.io/UEES-IA-Semana1-Grupo2/02_Visualizacion_Datos/images/02_wine_plot_interactivo.html)
 
 ### Conclusión
@@ -175,8 +175,8 @@ En general, la regresión logística mostró el mejor equilibrio entre precisió
 
 ### Evidencias
 - [Notebook 3](./03_Machine_Learning_Basico/03_Machine_Learning_Basico.ipynb)
-- <img src="./03_Machine_Learning_Basico/images/confusion_matrix_decision_tree.png" alt="confusion_matrix_decision_tree.png" width="300"/>
-- <img src="./03_Machine_Learning_Basico/images/proba_distribution.png" alt="proba_distribution.png" width="300"/>
+- <img src="./03_Machine_Learning_Basico/images/confusion_matrix_decision_tree.png" alt="confusion_matrix_decision_tree.png" width="800"/>
+- <img src="./03_Machine_Learning_Basico/images/proba_distribution.png" alt="proba_distribution.png" width="900"/>
 - [Ver todas las imágenes](./03_Machine_Learning_Basico/images/)
 
 ### Conclusiones
@@ -186,7 +186,7 @@ En general, la regresión logística mostró el mejor equilibrio entre precisió
 
 -------
 
-###  04. Deep Learning
+###  4. Deep Learning
 
 Este notebook implementa una red neuronal multicapa utilizando TensorFlow y Keras para resolver un problema de clasificación multiclase basado en el dataset Iris. A través de este laboratorio se aborda el flujo completo de un modelo de Deep Learning desde el preprocesamiento hasta la evaluación con gráficas y métricas.
 
