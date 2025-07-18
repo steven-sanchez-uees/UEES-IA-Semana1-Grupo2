@@ -171,6 +171,8 @@ iii. **Matrices de Confusión**
 - **Random Forest**
     <br>Su rendimiento fue intermedio entre los dos modelos anteriores, con un número de aciertos y errores muy balanceado.
 
+![Comparación de métricas](https://github.com/steven-sanchez-uees/UEES-IA-Semana1-Grupo2/blob/main/03_Machine_Learning_Basico/images/model_comparison.png?raw=true)
+
 En general, la regresión logística mostró el mejor equilibrio entre precisión y sensibilidad (F1-score), lo cual la convierte en una buena opción cuando se busca un balance entre ambos aspectos.
 
 ### Evidencias
@@ -178,6 +180,8 @@ En general, la regresión logística mostró el mejor equilibrio entre precisió
 - <img src="./03_Machine_Learning_Basico/images/confusion_matrix_decision_tree.png" alt="confusion_matrix_decision_tree.png" width="800"/>
 - <img src="./03_Machine_Learning_Basico/images/proba_distribution.png" alt="proba_distribution.png" width="900"/>
 - [Ver todas las imágenes](./03_Machine_Learning_Basico/images/)
+
+
 
 ### Conclusiones
 - La Regresión Logística se posicionó como el mejor modelo en este caso, con el mayor puntaje de precisión y un buen balance general.
