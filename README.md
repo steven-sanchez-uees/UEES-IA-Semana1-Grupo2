@@ -39,8 +39,29 @@
 
 ## Informe Ejecutivo
 
+### Operaciones básicas con arrays en NumPy
+
+```python
+import numpy as np
+
+# Crear un array 2x3
+a = np.array([[1, 2, 3], [4, 5, 6]])
+print("Array a:\n", a)
+print("Shape (filas, columnas):", a.shape)
+print("Tipo de dato:", a.dtype)
+
+# Crear un array del mismo tamaño lleno de unos
+b = np.ones((2, 3))
+print("\nArray b:\n", b)
+
+# Suma de arrays
+print("\nSuma a + b:\n", a + b)
+```
+Se crearon dos arrays del mismo tamaño: a con enteros y b con valores 1.0. Al sumarlos, NumPy realiza la operación elemento a elemento, aplicando broadcasting de forma automática. Como uno de los arrays contiene valores flotantes, el resultado también es de tipo float. Esta operación demuestra cómo NumPy permite realizar cálculos vectorizados de forma simple y eficiente.
+
 ### 1. Fundamentos NumPy y Pandas
 En el análisis se identificaron diferencias claras entre tipos de flores al comparar la proporción entre el largo y ancho de sus pétalos; Esta métrica permitió visualizar patrones que podrían ser útiles para clasificarlas automáticamente.
+
 
 - Se trabajó con el dataset **Iris**.
 - Se analizaron y manipularon datos utilizando arrays y DataFrames.
@@ -48,10 +69,28 @@ En el análisis se identificaron diferencias claras entre tipos de flores al com
 
 ### Análisis de resultados
 
+
+
+| species     | sepal_length | sepal_width | petal_length | petal_width |
+|-------------|--------------|-------------|--------------|-------------|
+| setosa      | 5.006        | 3.428       | 1.462        | 0.246       |
+| versicolor  | 5.936        | 2.770       | 4.260        | 1.326       |
+| virginica   | 6.588        | 2.974       | 5.552        | 2.026       |
+
+
 i. **Resumen estadístico por especie**:
    - La especie **virginica** tiene el mayor promedio de ´petal_ratio´, seguido de **versicolor** y finalmente **setosa**.
    - Esto indica que el largo del pétalo de *virginica* es desproporcionadamente mayor respecto a su ancho en comparación con las otras especies.
    - Esta diferencia puede ser utilizada como una variable discriminante para clasificación automática.
+
+| sepal_length | sepal_width | petal_length | petal_width | species | petal_ratio |
+|--------------|-------------|--------------|-------------|---------|--------------|
+| 5.1          | 3.5         | 1.4          | 0.2         | setosa  | 7.0          |
+| 4.9          | 3.0         | 1.4          | 0.2         | setosa  | 7.0          |
+| 4.7          | 3.2         | 1.3          | 0.2         | setosa  | 6.5          |
+| 4.6          | 3.1         | 1.5          | 0.2         | setosa  | 7.5          |
+| 5.0          | 3.6         | 1.4          | 0.2         | setosa  | 7.0          |
+
 
 ii. **Nueva columna petal_ratio**:
    - Se incorporó exitosamente como una nueva variable en el DataFrame.
@@ -65,7 +104,9 @@ iii. **Distribución visual**:
 ### Evidencias
 
 - [Notebook 1](./01_Fundamentos_NumPy_Pandas/01_Fundamentos_NumPy_Pandas.ipynb)
-- <img src="./01_Fundamentos_NumPy_Pandas/images/01_iris_petal_ratio.png" alt="01_iris_petal_ratio" width="300"/>
+- <img src="./01_Fundamentos_NumPy_Pandas/images/01_iris_petal_ratio.png" alt="01_iris_petal_ratio" width="800"/>
+
+La variable petal_ratio permite observar de forma clara las diferencias entre especies. La distribución presenta un sesgo hacia la izquierda, con la mayoría de valores concentrados entre 2 y 5, correspondientes a especies como versicolor y setosa, mientras que algunos valores extremos, mayores a 10 están asociados a virginica, lo que indica que esta última especie tiene pétalos más alargados proporcionalmente a su ancho. Esta nueva variable facilita el análisis discriminativo entre clases y puede resultar útil para tareas de clasificación supervisada.
 
 ### Conclusión
 
