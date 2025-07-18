@@ -116,13 +116,18 @@ El análisis demostró que petal_ratio es una métrica efectiva para diferenciar
 
 
 ### 2. Visualización de Datos
-Se identificaron patrones clave que ayudan a comprender mejor los datos:
+El análisis visual permitió identificar patrones clave que facilitan la comprensión de los datos y revelan relaciones relevantes entre variables:
 
-- En el caso del Titanic, los gráficos revelaron que la edad y el género influyeron significativamente en la distribución de los pasajeros por clase. Los adultos predominaban en primera clase, mientras que en tercera clase había mayor presencia de hombres y jóvenes. Esto sugiere desigualdad en el acceso a recursos dentro del barco.
+- **Caso Titanic**:  
+  A través de gráficos como el boxplot de edad por clase y el gráfico de barras por género, se identificaron diferencias significativas en la distribución de pasajeros:
 
-- Para los vinos, el análisis visual mostró que, al comparar niveles de alcohol y acidez, se formaban agrupaciones por tipo de vino. Estas diferencias químicas se pueden aprovechar para clasificarlos automáticamente.
+  - La **primera clase** presentaba una mayor proporción de **adultos**, con una media de edad más alta. En contraste, las clases **segunda y tercera** registraban una mayor presencia de **jóvenes**, evidenciando una posible desigualdad en el acceso a recursos y salvamento.  
+  - El análisis de género mostró una **mayor cantidad de hombres** a bordo (gráfico de barras), especialmente en clases más bajas, lo cual puede haber influido en los índices de supervivencia y distribución de recursos.
 
-Se utilizaron herramientas gráficas estáticas y dinámicas para facilitar el análisis, permitiendo identificar patrones que no serían visibles solo con tablas numéricas.
+- **Caso vinos**:  
+  La visualización de variables químicas como **alcohol** y **acidez** evidenció **agrupaciones naturales** entre los tipos de vino. Estas diferencias permiten clasificar los vinos de manera automatizada, facilitando modelos de segmentación o predicción basados en características físico-químicas.
+
+Se emplearon herramientas gráficas tanto **estáticas** (boxplots, gráficos de barras) como **interactivas** (plotly, altair) para facilitar el análisis, permitiendo descubrir patrones no evidentes en las tablas numéricas.
 
 ### Evidencias
 
@@ -133,7 +138,7 @@ Se utilizaron herramientas gráficas estáticas y dinámicas para facilitar el a
 
 ### Conclusión
 
-La visualización no solo hizo más comprensible la información, sino que expuso relaciones ocultas entre variables que pueden apoyar decisiones y automatizar procesos como segmentación o clasificación.
+La visualización no solo hizo la información más accesible y comprensible, sino que permitió descubrir relaciones ocultas entre variables clave, fundamentales para la toma de decisiones. Además, abrió la posibilidad de automatizar procesos analíticos como la segmentación, clasificación o predicción, mejorando la eficiencia del análisis exploratorio de datos.
 
 ---
 
