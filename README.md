@@ -145,6 +145,105 @@ En general, la regresión logística mostró el mejor equilibrio entre precisió
 
 -------
 
+###  04_Deep_Learning_Intro
+
+##  Acceso directo al notebook
+- [Notebook 4 - Deep Learning](./04_Deep_Learning_Intro/04_Deep_Learning_Intro.ipynb)
+
+##  Descripción general
+
+Este notebook implementa una red neuronal multicapa utilizando TensorFlow y Keras para resolver un problema de clasificación multiclase basado en el dataset Iris. A través de este laboratorio se aborda el flujo completo de un modelo de Deep Learning desde el preprocesamiento hasta la evaluación con gráficas y métricas.
+
+---
+
+##  Componentes clave del notebook
+
+- 🔹 Carga del dataset Iris y normalización con `StandardScaler`
+- 🔹 Codificación `one-hot` para etiquetas multiclase
+- 🔹 Arquitectura de red neuronal secuencial con dos capas ocultas
+- 🔹 Compilación y entrenamiento del modelo
+- 🔹 Visualización de métricas con Matplotlib
+- 🔹 Evaluación con accuracy, loss, matriz de confusión y ejemplos visuales
+
+---
+
+###  Resultados del entrenamiento
+
+**Precisión (Accuracy)**
+
+El siguiente gráfico muestra la evolución de la precisión durante las 30 épocas:
+
+![Precisión del modelo](https://github.com/steven-sanchez-uees/UEES-IA-Semana1-Grupo2/blob/main/04_Deep_Learning_Intro/images/accuracy_plot.png?raw=true)
+
+**Interpretación**:
+- Se observa un crecimiento constante de la precisión en entrenamiento.
+- La validación alcanza aproximadamente un **95%**, lo cual indica buena generalización sin sobreajuste.
+
+---
+
+**Pérdida (Loss)**
+
+Este gráfico representa la pérdida del modelo durante el entrenamiento:
+
+![Pérdida del modelo](https://github.com/steven-sanchez-uees/UEES-IA-Semana1-Grupo2/blob/main/04_Deep_Learning_Intro/images/loss_plot.png?raw=true)
+
+📉 **Interpretación**:
+- La pérdida en validación disminuye progresivamente hasta estabilizarse.
+- El modelo logra minimizar el error de forma eficiente, convergiendo correctamente.
+
+---
+
+## 📊 Evaluación del modelo
+
+### 🔹 Matriz de Confusión
+
+Representa la relación entre clases verdaderas y predichas:
+
+![Matriz de Confusión](https://github.com/steven-sanchez-uees/UEES-IA-Semana1-Grupo2/blob/main/04_Deep_Learning_Intro/images/confusion_matrix.png?raw=true)
+
+📌 **Interpretación**:
+- La diagonal indica predicciones correctas.
+- Una alta concentración en la diagonal muestra un modelo eficaz.
+
+---
+
+### 🔹 Predicciones aleatorias
+
+Ejemplos visuales de predicciones en imágenes de prueba:
+
+![Predicciones aleatorias](https://github.com/steven-sanchez-uees/UEES-IA-Semana1-Grupo2/blob/main/04_Deep_Learning_Intro/images/predicciones_random.png?raw=true)
+
+📌 **Interpretación**:
+- Muestra imágenes clasificadas correctamente por el modelo.
+- Se comparan etiquetas verdaderas (`V`) con predicciones (`P`).
+
+---
+
+### 📐 Métricas finales del modelo
+
+| Métrica     | Valor aproximado |
+|-------------|------------------|
+| Accuracy    | ~0.99            |
+| MSE         | *0.03 (ejemplo)* |
+| MAE         | *0.02 (ejemplo)* |
+| R² Score    | *0.95 (ejemplo)* |
+
+📌 **Notas**:
+- **Accuracy** indica precisión general del modelo.
+- **MSE / MAE** miden el error cuadrático y absoluto.
+- **R²** evalúa qué tan bien se ajustan las predicciones a los valores reales.
+
+---
+
+## 🧠 Conclusión general
+
+El modelo desarrollado demostró un desempeño sobresaliente en la clasificación del dataset Iris. Tanto las métricas como las gráficas evidencian un entrenamiento exitoso, con buena capacidad de generalización, sin indicios significativos de sobreajuste. Las visualizaciones refuerzan la confianza en las predicciones del modelo.
+
+---
+
+
+
+
 
 -------
 > *Desarrollado por el Grupo 2 – Universidad Espíritu Santo (UEES)*
