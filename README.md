@@ -132,10 +132,10 @@ Se emplearon herramientas gráficas tanto **estáticas** (boxplots, gráficos de
 
 ### Evidencias
 
- [Notebook 2](./02_Visualizacion_Datos/02_Visualizacion_Datos.ipynb)
- <img src="./02_Visualizacion_Datos/images/02_titanic_edad_clase.png" alt="02_titanic_edad_clase.png" width="800"/>
- <img src="./02_Visualizacion_Datos/images/02_titanic_genero.png" alt="02_titanic_genero.png" width="800"/>
- [Ver gráfico interactivo Wine](https://steven-sanchez-uees.github.io/UEES-IA-Semana1-Grupo2/02_Visualizacion_Datos/images/02_wine_plot_interactivo.html)
+- [Notebook 2](./02_Visualizacion_Datos/02_Visualizacion_Datos.ipynb)
+- <img src="./02_Visualizacion_Datos/images/02_titanic_edad_clase.png" alt="02_titanic_edad_clase.png" width="800"/>
+- <img src="./02_Visualizacion_Datos/images/02_titanic_genero.png" alt="02_titanic_genero.png" width="800"/>
+- [Ver gráfico interactivo Wine](https://steven-sanchez-uees.github.io/UEES-IA-Semana1-Grupo2/02_Visualizacion_Datos/images/02_wine_plot_interactivo.html)
 
 ### Conclusión
 
@@ -144,28 +144,25 @@ La visualización no solo hizo la información más accesible y comprensible, si
 ---
 
 ### 3. Machine Learning Basico
-En esta actividad se aplicaron técnicas de *Machine Learning supervisado* para abordar un problema clásico: predecir si un pasajero sobrevivió o no al hundimiento del Titanic, utilizando características personales como clase, sexo, edad, número de familiares, tarifa pagada, entre otras.
+En esta actividad aplicamos técnicas de Machine Learning supervisado para resolver un problema clásico: predecir si una persona sobrevivió o no al hundimiento del Titanic, basándonos en sus características personales como clase, sexo, edad, número de familiares, tarifa pagada, entre otros.
 
 Para esto, utilizamos tres modelos de clasificación muy populares:
 - Regresión Logística
 - Árbol de Decisión
 - Random Forest
 
-Cada modelo fue entrenado y evaluado utilizando métricas como *accuracy*, *precision*, *recall* y *F1-score*. Se analizaron además sus distribuciones de probabilidad (en el caso de regresión logística) y sus respectivas matrices de confusión para una evaluación más precisa del desempeño.
+Luego de entrenarlos, comparamos su desempeño mediante métricas como accuracy, precision, recall y F1-score, y visualizamos sus resultados a través de gráficos y matrices de confusión.
 
 i. **Resultados Generales de Precisión**
 <br>Al evaluar la precisión general de cada modelo, encontramos lo siguiente:
-
-| Modelo              | Accuracy |
-|---------------------|----------|
-| Regresión Logística | 81.01%   |
-| Random Forest       | 79.89%   |
-| Árbol de Decisión   | 78.77%   |
-
+````
+    Regresión Logística: 81.01%
+    Random Forest: 79.89%
+    Árbol de Decisión: 78.77%
 ````
 
 ii. **Distribución de Probabilidades – Regresión Logística**
-<br> El gráfico de probabilidades muestra una clara separación entre pasajeros con alta y baja probabilidad de supervivencia. La mayoría de las predicciones se agrupan en los extremos del umbral (0.5), lo cual indica que el modelo toma decisiones con alto grado de confianza.
+<br>Este gráfico nos ayuda a entender cómo el modelo de regresión logística calcula la probabilidad de supervivencia para cada pasajero. Como se observa, hay una clara separación en las predicciones: muchas personas tienen probabilidades muy bajas o muy altas, lo cual indica que el modelo está bastante seguro en la mayoría de sus decisiones.
 
 La línea roja marca el umbral de decisión del modelo (0.5), que separa a los que fueron clasificados como sobrevivientes y no sobrevivientes.
 
@@ -176,9 +173,9 @@ iii. **Matrices de Confusión**
   - Predijo correctamente a 55 personas que sí sobrevivieron.
   - Se equivocó con 15 personas (falsos positivos) y con 19 (falsos negativos).
 - **Árbol de Decisión**
-    <br>Cometió más errores al clasificar personas que no sobrevivieron, aumentando los falsos positivos respecto a la regresión logística.
+    <br>Tuvo más errores que la regresión logística, especialmente clasificando a personas que no sobrevivieron.
 - **Random Forest**
-    <br>Mostró un rendimiento equilibrado entre precisión y sensibilidad (*recall*), siendo una opción robusta y balanceada.
+    <br>Su rendimiento fue intermedio entre los dos modelos anteriores, con un número de aciertos y errores muy balanceado.
 
 ![Comparación de métricas](https://github.com/steven-sanchez-uees/UEES-IA-Semana1-Grupo2/blob/main/03_Machine_Learning_Basico/images/model_comparison.png?raw=true)
 
@@ -193,9 +190,9 @@ En general, la regresión logística mostró el mejor equilibrio entre precisió
 
 
 ### Conclusiones
-- **Regresión Logística** se consolidó como el mejor modelo gracias a su alto nivel de precisión y excelente balance entre *precision* y *recall*.
-- **Random Forest** ofreció un rendimiento sólido y consistente, ideal para entornos donde se requiera estabilidad en las métricas.
-- **Árbol de Decisión**, aunque más sencillo, mostró una ligera desventaja frente a los modelos anteriores, pero sigue siendo útil en contextos donde se requiera interpretabilidad.
+- La Regresión Logística se posicionó como el mejor modelo en este caso, con el mayor puntaje de precisión y un buen balance general.
+- Random Forest también mostró resultados sólidos, especialmente en términos de precisión.
+- Aunque el Árbol de Decisión fue el más simple, tuvo una leve desventaja frente a los otros modelos.
 
 -------
 
@@ -284,4 +281,3 @@ El modelo de red neuronal profunda entrenado para la clasificación de dígitos 
 > • Veronica Ochoa [@veritochoah](https://github.com/veritochoah)<br>
 > • Darío Pérez [@dario-perez-v](https://github.com/dario-perez-v)<br>
 > • Tomas Guijo [@tguijo](https://github.com/tguijo)<br>
-
