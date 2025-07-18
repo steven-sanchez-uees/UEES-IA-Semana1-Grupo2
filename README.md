@@ -27,12 +27,13 @@
 │
 ├── 04_Deep_Learning_Intro
 │   ├── 04_Deep_Learning_Intro.ipynb
+│   └── images
 │       ├── accuracy_plot.png
 │       ├── confusion_matrix.png
 │       ├── loss_plot.png
 │       └── predicciones_random.png
 │
-└── README.md
+├── README.md
 │
 └── requirements.txt
 ```
