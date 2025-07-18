@@ -165,7 +165,7 @@ i. **Resultados Generales de Precisión**
 ````
 
 ii. **Distribución de Probabilidades – Regresión Logística**
-<br>El gráfico de probabilidades muestra una clara separación entre pasajeros con alta y baja probabilidad de supervivencia. La mayoría de las predicciones se agrupan en los extremos del umbral (0.5), lo cual indica que el modelo toma decisiones con alto grado de confianza.
+<br> El gráfico de probabilidades muestra una clara separación entre pasajeros con alta y baja probabilidad de supervivencia. La mayoría de las predicciones se agrupan en los extremos del umbral (0.5), lo cual indica que el modelo toma decisiones con alto grado de confianza.
 
 La línea roja marca el umbral de decisión del modelo (0.5), que separa a los que fueron clasificados como sobrevivientes y no sobrevivientes.
 
