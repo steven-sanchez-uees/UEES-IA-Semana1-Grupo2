@@ -269,16 +269,8 @@ El modelo de red neuronal profunda entrenado para la clasificación de dígitos 
 
 
 ### Evidencias
-
-
 - [Notebook 4 - Deep Learning](./04_Deep_Learning_Intro/04_Deep_Learning_Intro.ipynb)
-
----
-
-
-
-
-
+  
 -------
 > *Desarrollado por el Grupo 2 – Universidad Espíritu Santo (UEES)*
 > 
